@@ -1,8 +1,12 @@
 from tensorflow.keras.models import load_model
 import numpy as np
 
-model = load_model("Your Model Path")
+model_high = load_model(Your model path)
+model_low = load_model(Yout model Path)
 
 _input = np.array([62900])
 
-print(model.predict(_input))
+highest_price = model_high.predict(_input)
+lowest_price = model_low.predict(_input)
+
+print(highest_price, lowest_price)
