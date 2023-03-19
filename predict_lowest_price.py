@@ -6,8 +6,7 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv(
-    "E:\\Programming Projects\\Projects\\Python\\Stock AI\\Samsung Electron\\data\\Samsung_Stock.csv")
+df = pd.read_csv("Your data path")
 df = pd.get_dummies(df)
 df = df.fillna(df.mean())
 df_corr = df.corr()
